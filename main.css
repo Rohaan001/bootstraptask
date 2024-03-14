@@ -1,0 +1,360 @@
+/* Setting color varable
+---------------------------*/
+$alabaster: #faf9f9;
+$neptune: #8FC6C4;
+$gullgray: #95A6B3;
+$balihai: #85A0AD;
+$ming: #316A80;
+$darkgray: #333333;
+$MenuFont:  "Helvetica", "Arial", sans-serif;
+$primaryfont: "Helvetica", "Arial", sans-serif;
+
+/*    Layout    */
+
+/*SET BODY HTML*/
+body{
+  font-family:$MenuFont;
+  margin: 0;
+  padding: 0;
+  background-color: $alabaster;
+}
+a {
+  color:$balihai;
+  text-decoration:none;
+  transition: 0.7s;
+}
+a:hover{
+    color:$ming;
+  }
+h1{
+  font-size: 65px;
+  text-align: center;
+}
+
+/*Header*/
+.header {
+  width:100%;
+  margin:0 auto;
+}
+
+/*TOP BAR SOCIAL*/
+.box-menu{
+  width: 100%;
+  margin: 0 auto;
+  height: 36px;
+}
+.bar-menu{
+  width: 100%;
+  margin: 0 auto;
+  height: 36px;
+  position:relative;
+  -webkit-animation: topmenuout 0.3s forwards ease-out;
+    animation: topmenuout 0.3s forwards ease-out;
+}
+.top-bar {
+  width: 80%;
+  margin: 0 auto;
+  ul{
+    margin: 0 17px 0 0;
+    padding: 0;
+    float:right;
+    padding-top: 10px;
+  }
+  
+  li{
+    list-style:none;
+    display:inline-block;
+    margin-left:10px;
+  }
+  
+}
+.fixed-bar{
+  background-color: $alabaster;
+  opacity:0.9;
+  width: 100%;
+  margin: 0 auto;
+  top:0px;
+  z-index: 2;
+  position:fixed;
+  border-bottom: 1px solid #ccc;
+  -webkit-animation: topmenuin 0.3s forwards ease-out;
+    animation: topmenuin 0.3s forwards ease-out;
+}
+/* social icon */
+.fa {
+  color:$darkgray;
+  transition: 0.7s;
+}
+.fa:hover{
+  color:$gullgray;
+}
+
+/* Language Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 17.5px;
+}
+.content-body{
+  height: 900px;
+  background-image: url(https://assets.awwwards.com/awards/images/2015/04/pattern.jpg);
+  background-repeat:repeat;
+}
+.lang-menu{
+  padding: 0;
+  margin: 0;
+  float:left;
+  padding-top: 5px;
+  background-color: transparent;
+  border: none;
+  outline-style:none;
+  cursor:pointer;
+  z-index: 3;
+  img{
+    height: 25px;
+    width: auto;
+  }
+  }
+
+.lang-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin-top:30px;
+    margin-left: -5px;
+    background-color: $alabaster;
+    width: auto;
+    z-index: 4;
+    border-radius: 0 0 10px 10px;
+    img{
+      height: 25px;
+      width: auto;
+  }
+}
+
+.lang-content a {
+    padding: 0 5px;
+  padding-top: 2px;
+    margin: 0;
+  z-index: 3;
+    text-decoration: none;
+    display: block;
+}
+
+.lang-content a:hover {
+  background-color: $gullgray;
+  border-radius: 10px;
+}
+
+.dropdown:hover .lang-content {
+    display: block;
+}
+
+.dropdown:hover .lang-menu {
+    background-color: transparent;
+}
+
+
+
+/*MAIN MENU*/
+.nav-bar{
+  width: 100%;
+  background-color: $gullgray;
+  box-shadow:0px 1px 3px $darkgray;
+  position:absolute;
+  z-index: 2;
+}
+.fixed{
+  top:0;
+  position:fixed;
+  z-index: 2;
+}
+
+.main-menu {
+  text-align:center;
+  font-size: 14px;
+  text-transform:uppercase;
+  width: 80%;
+  margin: 0 auto;
+  ul{
+    margin: 0;
+    float: right;
+    border-right: 1px solid $balihai;
+  }
+  li{
+    list-style:none;
+    display:inline-block;
+    position:relative;
+    float: left;
+    a{
+      color: $alabaster;
+      margin: 0;
+      padding: 35px 15px;
+      height: 90px;
+      line-height: 90px;
+      border-left: 1px solid $balihai;
+    }
+    a:hover{
+      color:$ming;
+      background-color: $alabaster;
+    }
+  }
+}
+
+.logo{
+  margin: 0;
+  padding: 0;
+  float:left;
+  :hover {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: filter 0.3s ease-out;
+    -webkit-transition:filter 0.3s ease-out;
+    }
+  img{
+    margin-top: 15px;
+    height: 60px;
+    border-radius:100%;
+  }
+  
+}
+
+/*SLIDER*/
+.container{
+  width: 100%;
+  margin-top: 90px;
+}
+.slider {
+  padding-top: 125px;
+  position:relative;
+  background-image: url(https://images.unsplash.com/photo-1462332420958-a05d1e002413?dpr=1&auto=compress,format&fit=crop&w=1640&h=&q=80&cs=tinysrgb&crop=);
+  background-size:cover;
+  height: 800px;
+  z-index:0;
+  h1{
+    color:white;
+    text-shadow:0 0 10px #333;
+  }
+}
+.slider2 {
+  padding-top: 125px;
+  position:relative;
+  background-image: url(https://images.unsplash.com/photo-1490843524522-ee99e561bb90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7e40c112e3c25f8f8e7b58d1df310228&auto=format&fit=crop&w=1352&q=80);
+  background-size:cover;
+  height: 800px;
+  z-index:0;
+  h1{
+    color:white;
+    text-shadow:0 0 10px #333;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+/*palette colori*/
+.color-palette{
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: $darkgray;
+  padding: 20px 0;
+}
+.colors {
+  margin:0 auto;
+  width: 100%;
+  padding:0;
+  text-transform: uppercase;
+  ul{
+    float:left;
+    margin: 0 auto;
+  }
+  li{
+    margin: 0 -1.8px 0 -1.5px;
+    list-style: none;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    line-height:20px;
+    text-align: center;
+    padding:35px 10px;
+  }
+}
+
+#alabaster {
+  background-color: $alabaster;
+  color: $darkgray;
+}
+
+#neptune {
+  background-color: $neptune;
+  color:$alabaster;
+}
+
+#gullgray {
+  background-color: $gullgray;
+  color: $alabaster;
+}
+
+#balihai {
+  background-color: $balihai;
+  color: $alabaster;
+}
+
+#ming {
+  background-color: $ming;
+  color: $alabaster;
+}
+
+#darkgray {
+  background-color: $darkgray;
+  color: $alabaster;
+}
+
+
+
+/*clearfix*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes topmenuin {
+    0%   {background-color:$alabaster; left:0px; top:0px;}
+    100% {background-color:$alabaster; left:0px; top:90px;}
+}
+
+/* Standard syntax */
+@keyframes topmenuin {
+    0%   {background-color:$alabaster; top:0px;}
+    100%   {background-color:$alabaster; top:90px;}
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes topmenuout {
+    0%   {background-color:$alabaster; top:126px; z-index:2;}
+  99.9% {
+    top: 1px;
+    z-index: 2;
+  }
+    100% {background-color:$alabaster; left:0px; top:0px; z-index:3;}
+}
+
+/* Standard syntax */
+@keyframes topmenuout {
+    0%   {background-color:$alabaster; top:126px; z-index:2;}
+  99.9% {
+    z-index: 2;
+    top:1px;
+  }
+    100%   {background-color:$alabaster; top:0px; z-index:3;}
+    
+}

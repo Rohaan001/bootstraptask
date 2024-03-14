@@ -1,0 +1,35 @@
+#top-main-navigation{
+    background: 
+    linear-gradient(-50deg,#bfee52,#ea3a7e,#20aadb,#23e0b3);background-size: 320% 200%;-webkit-animation: 
+    Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: 
+    Gradient 15s ease infinite;}@-webkit-keyframes 
+    Gradient{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}@-moz-keyframes 
+    Gradient{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}@keyframes 
+    Gradient{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%};
+      position:sticky;
+      top:0;
+    }
+    .main-container{
+      width: 100%;
+      height: 100%;
+      
+      margin-top: 100px;
+    }
+    .second-container{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.096); 
+      margin-top: 100px;
+    }
+    .Third-container{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.096); 
+      margin-top: 100px;
+    }
+    .four-container{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.096); 
+      margin-top: 100px;
+    }
